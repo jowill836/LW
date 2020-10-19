@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema  version="1.0"
+            targetNamespace = "http://www.ujf-grenoble.fr/l3miage/medical"
+            xmlns= "http://www.ujf-grenoble.fr/l3miage/medical"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           
+           elementFormDefault="qualified">
+    
+    <xs:element name="cabinet" type = "Cabinet"/>
+    
+    <xs:complexType name="Cabinet">
+        <xs:sequence>
+         <xs:element name = "nom" type = "xs:string"/>
+         <xs:element name = "adresse" type = "Adresse"/>
+         <xs:element name = "infirmiers" type = "Infirmiers"/>
+         <xs:element name = "patients" type = "Patients"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Adresse">
+        <xs:sequence>
+            <xs:element name = "numéro" type = "xs:int"/>
+            <xs:element name = "rue" type = "xs:string"/>
+            <xs:element name = "ville" type = "xs:string"/>
+            <xs:element name = "codePostal" type = "xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Infirmiers">
+        <xs:sequence>
+            <xs:element name = "infirmier" type = "Infirmier" minOccurs = "1" maxOccurs = "unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Infirmier">
+        <xs:sequence>
+            <xs:element name = "nom" type = "xs:string"/>
+            <xs:element name = "prénom" type = "xs:string"/>
+            <xs:element name = "photo" type = "xs:string"/>
+        </xs:sequence>
+        <xs:attribute name = "id" type = "xs:int"/>
+    </xs:complexType>
+    
+    <xs:complexType name="Patients">
+        <xs:sequence>
+            <xs:element name = "patient" type = "Patient" minOccurs = "1" maxOccurs = "unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Patient">
+        <xs:sequence>
+            <xs:element name = "nom" type = "xs:string"/>
+            <xs:element name = "prénom" type = "xs:string"/>
+            <xs:element name = "sexe" type = "Sexe"/>
+            <xs:element name = "naissance" type = "xs:date"/>
+            <xs:element name = "numéro" type = "xs:string"/>
+            <xs:element name = "adresse" type = "AdressePatient"/>
+            <xs:element name = "visite" type = "Visite"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="Sexe">
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value = "M" />
+            <xs:enumeration value = "F" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="AdressePatient">
+        <xs:sequence>
+            <xs:element name = "étage" type = "xs:int" minOccurs = "0" maxOccurs = "1" />
+            <xs:element name = "numéro" type = "xs:int" minOccurs = "0" maxOccurs = "1"/>
+            <xs:element name = "rue" type = "xs:string"/>
+            <xs:element name = "ville" type = "xs:string"/>
+            <xs:element name = "codePostal" type = "xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Visite">
+        <xs:sequence>
+            <xs:element name = "acte" type = "Acte" minOccurs = "1" maxOccurs = "unbounded"/>
+        </xs:sequence>
+        <xs:attribute name = "date" type = "xs:date" use = "required"/>
+        <xs:attribute name = "intervenant" type = "xs:int" />         
+    </xs:complexType>
+    
+    <xs:complexType name="Acte">
+        <xs:attribute name = "id" type = "xs:int" />
+    </xs:complexType>
+
+</xs:schema>

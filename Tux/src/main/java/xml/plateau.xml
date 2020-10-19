@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plateau>
+    <dimensions>
+        <height>100</height>
+        <width>40</width>
+        <depth>50</depth>
+    </dimensions>
+    <mapping>
+        <textureBottom>textures/floor/grass2.png</textureBottom>
+        <textureEast>textures/skybox/interstellar/east.png</textureEast>
+        <textureWest>textures/skybox/interstellar/west.png</textureWest>
+        <textureNorth>textures/skybox/interstellar/north.png</textureNorth>
+    </mapping>
+    <pion>une url</pion>
+</plateau>

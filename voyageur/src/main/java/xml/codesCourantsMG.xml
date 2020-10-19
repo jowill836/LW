@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeCourantMG>
+    <datePublication>2013-11-29</datePublication>
+    <categorie>
+        <nom>Actes cliniques</nom>
+        <codeNGAP>
+            <libelle>Consultation</libelle>
+            <code>C</code>
+            <montant>23</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <code>MNO</code>
+            <libelle>Consultation au cabinet d'un nourrisson de moins de 2 ans (inclus)</libelle>
+            <montant>28</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>26</montant>
+            <code>MGE</code>
+            <libelle>Consultation au cabinet d'un enfant entre 2 et 6 ans</libelle>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Urgences. cardiologie. épistaxis</nom>
+        <codeNGAP>
+            <code>DEQP003</code>
+            <montant>13.52</montant>
+            <libelle>ECG</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>74.88</montant>
+            <libelle>ECG avec acte d'urgence/ réanimation au cabinet</libelle>
+            <code>YYYY010</code>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>74.88</montant>
+            <libelle>Acte d'urgence/ réanimation au cabinet</libelle>
+            <code>YYYY010</code>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Tamponnement nasal antérieur</libelle>
+            <montant>51.02</montant>
+            <code>GABD002</code>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Brûlures</nom>
+        <codeNGAP>
+            <code>K9</code>
+            <montant>17.28</montant>
+            <libelle>Nettoyage ou pansement d'une brûlure pour une surface de 10 cm²  (hors face ou mains)</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <code>K16</code>
+            <montant>30.72</montant>
+            <libelle>Nettoyage ou pansement d'une brûlure pour une surface inférieure à 10% de la surface du corps (hors face ou mains)</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>25.92</montant>
+            <code>K92</code>
+            <libelle>Nettoyage ou pansement d'une brûlure pour une surface de 10 cm² de la face ou des mains</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>46.08</montant>
+            <code>K162</code>
+            <libelle>Nettoyage ou pansement d'une brûlure de la face ou des mains pour une surface inférieure à 10% de la surface du corps</libelle>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Sutures</nom>
+        <codeNGAP>
+            <code>QZJA002</code>
+            <libelle>Parage ou suture de plaie superficielle inférieure à 3 cm (Hors face)</libelle>
+            <montant>50.47</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>65.67</montant>
+            <code>QZJA017</code>
+            <libelle>Parage ou suture de plaie superficielle de 3 cm à 10 cm (Hors face)</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Parage ou suture de plaie de sourcil</libelle>
+            <montant>52.52</montant>
+            <code>BACA008</code>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Orthopédie</nom>
+        <codeNGAP>
+            <libelle>Injection thérapeutique d'agent pharmacologique dans une articulation ou une bourse séreuse du membre supérieur</libelle>
+            <code>MZLB001</code>
+            <montant>26.13</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <code>AHLB006</code>
+            <libelle>Infiltration thérapeutique du nerf médian dans le canal carpien</libelle>
+            <montant>29.48</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>30.82</montant>
+            <code>NZLB001</code>
+            <libelle>Injection thérapeutique d'agent pharmacologique dans une articulation ou une bourse séreuse du membre inférieur</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Ponction ou cytoponction d'une articulation du membre inférieur</libelle>
+            <montant>22.76</montant>
+            <code>NZHB002</code>
+        </codeNGAP>
+        <codeNGAP>
+            <code>MHMP007</code>
+            <montant>38.4</montant>
+            <libelle>Confection d'une orthèse statique d'un doigt (même tarif si plusieurs doigts)</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>31.35</montant>
+            <libelle>Réduction orthopédique d'une pronation douloureuse du coude</libelle>
+            <code>MFEP001</code>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>47.78</montant>
+            <libelle>Confection d'une contention souple de la cheville et/ou du pied. ou confection d'une semelle plâtrée</libelle>
+            <code>NGMP001</code>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Confection d'un appareil rigide d'immobilisation de la jambe. de la cheville et/ou du pied ne prenant pas le genou (botte plâtrée)</libelle>
+            <montant>54.45</montant>
+            <code>NZMP003</code>
+        </codeNGAP>
+        <codeNGAP>
+            <code>LAEP002</code>
+            <montant>53.2</montant>
+            <libelle>Réduction orthopédique de fracture de l'os nasal [des os propres du nez]</libelle>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Gynécologie</nom>
+        <codeNGAP>
+            <libelle>Prélèvement cervicovaginal (pour frottis cytologique)</libelle>
+            <code>JKHD001</code>
+            <montant>4.82</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Pose d'un dispositif intra-utérin (Changement DIU: code JKKD001 même tarif)</libelle>
+            <code>JKLD001</code>
+            <montant>38.4</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>14.47</montant>
+            <libelle>Pose d'implant contraceptif sous cutané</libelle>
+            <code>QZLA004</code>
+        </codeNGAP>
+    </categorie>
+    <categorie>
+        <nom>Divers</nom>
+        <codeNGAP>
+            <libelle>Ablation de bouchon de cérumen ou de corps étranger du conduit auditif externe</libelle>
+            <code>CAGD001</code>
+            <montant>17.21</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Séance d'injection sous cutanée d'extrait allergénique pour désensibilisation spécifique</libelle>
+            <code>FGLB001</code>
+            <montant>12.34</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Séance de destruction de 1 à 10 lésions cutanées superficielles. par agent chimique ou par cryothérapie de contact (hors face)</libelle>
+            <code>QZNP004</code>
+            <montant>21.28</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <code>QANP007</code>
+            <libelle>Séance de destruction de 1 à 10 lésions cutanées superficielles du visage. par agent chimique ou par cryothérapie de contact</libelle>
+            <montant>28.8</montant>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>21.69</montant>
+            <code>QZFA010</code>
+            <libelle>Exérèse tangentielle de 1 à 20 molluscum contagiosum</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <libelle>Excision d'une thrombose hémorroïdaire</libelle>
+            <montant>62.7</montant>
+            <code>EGFA007</code>
+        </codeNGAP>
+        <codeNGAP>
+            <code>EGJA001</code>
+            <montant>62.7</montant>
+            <libelle>Evacuation d'une thrombose hémorroïdaire externe</libelle>
+        </codeNGAP>
+        <codeNGAP>
+            <montant>30.99</montant>
+            <libelle>Incision ou excision d'un panaris superficiel</libelle>
+            <code>MJPA010</code>
+        </codeNGAP>
+    </categorie>
+</codeCourantMG>
+
+<!-- count(//codeNGAP) -->
+<!-- count(//categorie) -->
+<!-- //categorie[1]/nom -->
+<!-- //codeNGAP[code="le code à chercher"]/montant-->
+<!-- count(//codeNGAP[montant < "50"]) -->
+<!-- //codeNGAP[code ="C"]/.. -->
+<!-- //codeNGAP[montant > "65" and montant<"70"]/../nom -->

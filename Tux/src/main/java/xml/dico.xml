@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<tux:dictionnaire
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:/home/josias/MIAGE/LW/Tux/src/main/java/xsd/dico.xsd'>
+    
+    <tux:mot niveau = "3" >paix</tux:mot>
+    <tux:mot niveau = "1" >dix</tux:mot>
+    <tux:mot niveau = "4" >bailler</tux:mot>
+    <tux:mot niveau = "2" >Doux</tux:mot>
+    <tux:mot niveau = "5" >boulanger</tux:mot>
+    <tux:mot niveau = "1" >est</tux:mot>
+    <tux:mot niveau = "2" >chat</tux:mot>
+    <tux:mot niveau = "3" >boule</tux:mot>
+    <tux:mot niveau = "4" >donne</tux:mot>
+    <tux:mot niveau = "5" >tremblement</tux:mot>
+    
+</tux:dictionnaire>

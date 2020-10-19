@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           targetNamespace="http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/tux"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="dico.xsd"/>
+    
+    <xs:element name="profil" type="tux:Profil"/>
+    
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name = "nom" type = "xs:string"/>
+            <xs:element name = "avatar" type = "xs:string"/>
+            <xs:element name = "anniversaire" type = "xs:date"/>
+            <xs:element name = "parties" type = "tux:Parties" minOccurs = "0" maxOccurs = "unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Parties">
+        <xs:sequence>
+            <xs:element name = "partie" type = "tux:partie" minOccurs = "1" maxOccurs = "unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="partie">
+        <xs:sequence>
+            <xs:element name = "temps" type = "xs:double" minOccurs = "0" maxOccurs = "1"/>
+            <xs:element name = "mot" type = "tux:Mot" />
+        </xs:sequence>
+        <xs:attribute name = "date" type = "xs:date"/>
+        <xs:attribute name = "trouvé" type = "xs:string"/>
+    </xs:complexType>
+    
+    
+
+    
+</xs:schema>
