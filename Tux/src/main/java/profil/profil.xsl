@@ -18,56 +18,59 @@
         <html>
             <head>
                 <title>profil</title>
+                                <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+
             </head>
             <body>
+                <h1>
+                    <b>INFO JOUEUR</b>
+                </h1>
               
-                <table style = "width:100%;" border = "1">
-                    <tr>
-                        <th>Nom</th>
-                        <th>Avatar</th>
-                        <th>Anniversaires</th>
-                        <th>Parties</th>
-                    </tr>
-                    <xsl:for-each select = "//tux:profil" >
-                        <tr> 
-                            <td align = "center">
-                                <xsl:value-of select="tux:nom"/>
-                            </td>     
-                            <td align = "center">
-                                <xsl:value-of select="tux:avatar"/>
-                            </td>
-                            <td align = "center">
-                                <xsl:value-of select="tux:anniversaire"/>
-                            </td>
-                            <td>
-                                <table style = "width:100%;" border = "1">
-                                    <th>Date</th>
-                                    <th>Temps</th>
-                                    <th>Mot</th>
-                                    <th>Trouvé</th>
-                                    <xsl:for-each select = "//tux:partie" >
-                                    <tr>
-                                        <td align = "center" >
-                                            <xsl:value-of select="@date"/>
-                                        </td>
-                                        <td align = "center">
-                                            <xsl:value-of select="tux:temps"/>
-                                        </td>  
-                                        <td align = "center">
-                                            <xsl:value-of select="tux:mot"/>
-                                        </td>
-                                        <td align = "center" >
-                                            <xsl:value-of select="@trouvé"/>
-                                        </td>  
-                                    </tr>
-                                    </xsl:for-each>
-                                </table>
+                   
+                       
+                    
+                <xsl:for-each select = "//tux:profil" >
                         
-                            </td>       
+                    <p>  
+                        <b>Nom:</b> 
                
-                        </tr>
-                    </xsl:for-each>
-                </table>
+                        <xsl:value-of select="tux:nom"/>
+                           <br/>     
+                           <b>Avatar:</b>
+                        <xsl:value-of select="tux:avatar"/>
+                        <br/>
+                        <b>Anniversaires:</b>
+                        <xsl:value-of select="tux:anniversaire"/>
+                    </p>
+                    <h3>Parties</h3>
+                        <table style = "width:100%;" border = "1">
+                            <th>Date</th>
+                            <th>Temps</th>
+                            <th>Mot</th>
+                            <th>Trouvé</th> 
+                            <xsl:for-each select = "//tux:partie" >
+                                <tr>
+                                    <td align = "center" >
+                                        <xsl:value-of select="@date"/>
+                                    </td>
+                                    <td align = "center">
+                                        <xsl:value-of select="tux:temps"/>
+                                    </td>  
+                                    <td align = "center">
+                                        <xsl:value-of select="tux:mot"/>
+                                    </td>
+                                    <td align = "center" >
+                                        <xsl:value-of select="@trouvé"/>
+                                    </td>  
+                                </tr>
+                            </xsl:for-each>
+                        </table>
+                        
+                           
+               
+                
+                </xsl:for-each>
+            
            
             </body>
         </html>

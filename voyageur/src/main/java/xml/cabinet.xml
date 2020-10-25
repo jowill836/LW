@@ -75,7 +75,7 @@
                 <codePostal> 38700 </codePostal>
             </adresse>
 
-            <visite date="2015-12-08" >
+            <visite date="2015-12-08" intervenant="001">
                 <acte id = "300"></acte>
             </visite>
 

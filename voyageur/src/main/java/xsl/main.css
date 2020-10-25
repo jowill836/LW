@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --violet: #77448B;
+    --gris: #f7f7f7;
+    --blanc: #FDFEFE;
+    --violetClair:#D2B4DE;
+    --violetSombre: #4A235A;
+    --violetPlusClair: #E8DAEF;
+}
+
+html, body {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align:center;
+    font-family: Poppins;
+    background-color: var(--violetPlusClair);
+}
+table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    border-radius: 30px;
+    background-color: var(--violetPlusClair);
+
+}
+tr:hover {background-color: var(--violetClair);}
+th {
+    font-weight: unset;
+    padding-right: 10px;
+    color: var(--blanc);
+    background-color: var(--violetSombre);
+    border-bottom: 1px solid #ddd;
+    border-radius: 30px;
+
+}
+td {
+    font-weight: unset;
+    padding-right: 10px;
+    background-color: var(--violetClair);
+    border-radius: 30px;
+    text-align: center;
+
+}
+b {
+    text-align: justify;
+    font-weight: bold;
+    padding-right: 10px;
+    color: var(--violetSombre);
+}
+p{
+    text-align: justify;
+}
+
+input {
+    display: block;
+    outline: none;
+    border: none !important;
+    color: var(--blanc);
+    background: var(--violetSombre);
+    text-align: center;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    color: var(--blanc);
+    background: transparent;
+    background-color: var(--violetSombre);
+
+}
+
+
+h3 {
+    color: var(--violet);
+}
+
+.main {
+    width:100%;
+    text-align:left;
+    margin: auto;
+}
+
+.header {
+    position:relative;
+    height:fit-content;
+    background-color:#F7F7F7;
+    width:100%;
+    display:block;
+    padding-top: 10px;
+}

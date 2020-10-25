@@ -1,0 +1,69 @@
+<html xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" xmlns:cab="http://www.ujf-grenoble.fr/l3miage/medical">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>cabinet</title>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <script type="text/javascript">
+                    function openFacture(prenom, nom, actes) {
+                    var width  = 500;
+                    var height = 300;
+                    if(window.innerWidth) {
+                    var left = (window.innerWidth-width)/2;
+                    var top = (window.innerHeight-height)/2;
+                    }
+                    else {
+                    var left = (document.body.clientWidth-width)/2;
+                    var top = (document.body.clientHeight-height)/2;
+                    }
+                    var factureWindow = window.open('','facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width='+width+', height='+height+'');
+                    factureText = "Facture pour : " + prenom + " " + nom;
+                    factureWindow.document.write(factureText);
+                    }   
+                </script>
+    </head>
+    <body>
+        <h1>
+            <b>FICHE INFIRMIER</b>
+        </h1>
+        <h4>Bonjour Sarah, </h4>
+        <h4>Aujourd'hui, vous avez 2 patient(es)</h4>
+        <table border="1" style="width:100%;">
+            <tr>
+                <th style="width:25%;">Date</th><th style="width:25%;">NOM</th><th style="width:25%;">Adresse</th><th style="width:25%;">Liste soins</th>
+            </tr>
+        </table>
+        <table border="1" style="width:100%;">
+            <tr>
+                <td style="width:25%;" align="center">2015-12-08</td><td style="width:25%;" align="center">Al&eacute;cole</td><td align="center" style="width:25%;">
+                6
+                50
+                avenue F&eacute;lix Viallet
+                Grenoble
+                38031
+            </td><td style="width:25%;" align="center">
+            Injection sous-cutan&eacute;e.
+        <input type="button" value="Facture" onclick="
+                            openFacture('Yvon', 
+                            'Al&eacute;cole', 
+                            '')
+                        "></td>
+            </tr>
+        </table>
+        <table border="1" style="width:100%;">
+            <tr>
+                <td style="width:25%;" align="center">2015-12-08</td><td style="width:25%;" align="center">Orouge</td><td align="center" style="width:25%;">                
+                Rond-Point de la Croix de Vie
+                 La Tronche 
+                 38700 
+            </td><td style="width:25%;" align="center">
+            Pansement de br&ucirc;lure &eacute;tendue ou de plaie chimique ou thermique &eacute;tendue,
+            sur une surface sup&eacute;rieure &agrave; 5% de la surface corporelle.
+        <input type="button" value="Facture" onclick="
+                            openFacture('Elvire', 
+                            'Orouge', 
+                            '')
+                        "></td>
+            </tr>
+        </table>
+    </body>
+</html>

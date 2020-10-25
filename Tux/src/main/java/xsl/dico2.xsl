@@ -18,23 +18,40 @@
         <html>
             <head>
                 <title>dictionnaire</title>
+                <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+
             </head>
             <body>
-                <ul>
-                    <xsl:apply-templates select = "//tux:mot">
-                        <xsl:sort order = "ascending" select="@niveau"/>
-                    </xsl:apply-templates>
-                </ul>
+                <h1>
+                    <b>MOTS DU DICTIONNAIRE</b>
+                </h1>
+                <table>
+                    <tr>
+                        <th>Mots</th>
+                        <th>Niveau</th>
+                    </tr>
+                    <tr>
+                        <xsl:apply-templates select = "//tux:mot">
+                            <xsl:sort order = "ascending" select="@niveau"/>
+                        </xsl:apply-templates>
+                    
+                    </tr>
+                    
+                </table> 
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="tux:mot">
-        <li>
-            <p>
-                Mot = <xsl:value-of select="."/> (Niveau = <xsl:value-of select="@niveau" />)          
-            </p>
-        </li>
+        
+        <tr>
+            <td>
+           
+               <xsl:value-of select="."/>        
+            
+            </td>
+            <td> <xsl:value-of select="@niveau" /></td>
+        </tr>
     </xsl:template>
     
     

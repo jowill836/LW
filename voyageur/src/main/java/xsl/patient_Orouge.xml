@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><cab:patient xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" xmlns:cab="http://www.ujf-grenoble.fr/l3miage/medical">
+    <cab:nom>Orouge</cab:nom>
+    <cab:prénom>Elvire</cab:prénom>
+    <cab:sexe>F</cab:sexe>
+    <cab:naissance>1982-03-08</cab:naissance>
+    <cab:numéro>282036902305288</cab:numéro>
+    <cab:adresse>
+        <cab:étage/>
+        <cab:numéro/>
+        <cab:rue>Rond-Point de la Croix de Vie</cab:rue>
+        <cab:ville> La Tronche </cab:ville>
+        <cab:codePostal> 38700 </cab:codePostal>
+    </cab:adresse>
+    <cab:visite>
+        <cab:date>2015-12-08</cab:date>
+        <cab:intervenant>
+            <cab:nom>Fréchie</cab:nom>
+            <cab:prénom>Sarah</cab:prénom>
+        </cab:intervenant>
+        <cab:acte>
+            Pansement de brûlure étendue ou de plaie chimique ou thermique étendue,
+            sur une surface supérieure à 5% de la surface corporelle.
+        </cab:acte>
+    </cab:visite>
+</cab:patient>
