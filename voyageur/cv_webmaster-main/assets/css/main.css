@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --violet: #77448B;
+    --gris: #f7f7f7;
+    --blanc: #ffff;
+    --gris-texte: #4C4C4C ;
+    --noir: #111111;
+}
+
+html, body {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align:center;
+    font-family: Poppins;
+    color: var(--gris-texte);
+}
+
+ul {
+    display: block;
+}
+
+.violet {
+    color: var(--violet);
+}
+
+.texte-fin {
+    font-weight: 200;
+}
+
+.main {
+    width:100%;
+    text-align:left;
+    margin: auto;
+}
+
+.header {
+    position:relative;
+    height:fit-content;
+    background-color:#F7F7F7;
+    width:100%;
+    display:block;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header .gauche {
+    flex: 1;
+    align-items: stretch;
+}
+
+.header .droite {
+    text-align: right;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.gauche img {
+    width: 220px;
+    height: available;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.section ul {
+    list-style: none; /* Remove default bullets */
+}
+
+.section ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--violet); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+h1, h3 {
+    line-height: 0em;
+    color: var(--noir);
+}
+
+.addresse::after {
+    content: '🏠';
+    margin-left: 0.5em;
+}
+
+.telephone::after{
+    content: '📞';
+    margin-left: 0.5em;
+}
+
+.mail::after{
+    content: '📧';
+    margin-left: 0.5em;
+}
+
+.permis::after{
+    content: '🚗';
+    margin-left: 0.5em;
+}
